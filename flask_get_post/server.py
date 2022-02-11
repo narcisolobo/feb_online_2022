@@ -9,7 +9,7 @@ def index():
 @app.route('/handle_form', methods=['POST'])
 def handle_form():
     return render_template('result.html',
-    full_name = request.form['full_name'],
+    banana = request.form['full_name'],
     mothers_maiden_name = request.form['mothers_maiden_name'],
     ssn = request.form['ssn'])
 
